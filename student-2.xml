@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<student xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='schools-no-namespace.xsd'>
+    <name>Doctor Watson</name>
+    <id-number>0454554</id-number>
+    <program-of-study>Computer Analysis</program-of-study>
+    <name-of-school>Fanshawe College, Center-London Campus</name-of-school>
+    <school-term>W2019</school-term>
+    <timetable>
+        <day name='Monday'>
+            <classes>
+                <class course-code='INFO-6777' room-number='H5041'>
+                    <time start='800' />
+                </class>
+                <class course-code='INFO-6485' room-number='H8601'>
+                    <time start='1200' />
+                </class>
+            </classes>
+        </day>
+        <day name='Tuesday'>
+            <classes>
+                <class course-code='INFO-7320' room-number='H0781'>
+                    <time start='1400' />
+                </class>
+            </classes>
+        </day>
+        <day name='Wednesday' />
+        <day name='Thursday' />
+        <day name='Friday'>
+            <classes>
+                <class course-code='INFO-9005' room-number='H0421'>
+                    <time start='900' />
+                </class>
+                <class course-code='INFO-9005' room-number='H0421'>
+                    <time start='1000' />
+                </class>
+                <class course-code='INFO-7905' room-number='H0401'>
+                    <time start='1100' />
+                </class>
+            </classes>
+        </day>
+    </timetable>
+</student>

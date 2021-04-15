@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  width: 75%;
+  height: 75%;
+}
+
+#time-table {
+  padding: 10px;
+}
+
+#table-info {
+  height: 100%;
+  border: 1px solid #000000;
+}
+
+td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}

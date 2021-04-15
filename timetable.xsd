@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string" />
+                <xs:element name="id-number" minOccurs="1" maxOccurs="1" type="xs:unsignedInt" />
+                <xs:element name="program-of-study" minOccurs="0" maxOccurs="1" type="xs:string" />
+                <xs:element name="name-of-school" minOccurs="0" maxOccurs="1" type="xs:string" />
+                <xs:element name="school-term" minOccurs="1" maxOccurs="1" type="xs:string" />
+                <xs:element name="timetable" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="5" maxOccurs="5" name="day">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="1" name="classes">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" maxOccurs="13" name="class">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="1" maxOccurs="1" name="time">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="start" use="required">
+                                                                            <xs:simpleType>
+                                                                                <xs:restriction base="xs:unsignedShort">
+                                                                                    <xs:minInclusive value="800" />
+                                                                                    <xs:maxInclusive value="2000" />
+                                                                                </xs:restriction>
+                                                                            </xs:simpleType>
+                                                                        </xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="course-code" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:pattern value="[A-Z][A-Z][A-Z][A-Z][-][0-9][0-9][0-9][0-9]" />
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                            <xs:attribute name="room-number" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Monday" />
+                                                <xs:enumeration value="Tuesday" />
+                                                <xs:enumeration value="Wednesday" />
+                                                <xs:enumeration value="Thursday" />
+                                                <xs:enumeration value="Friday" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    <xs:unique name="unique-day">
+                        <xs:selector xpath="day" />
+                        <xs:field xpath="@name" />
+                    </xs:unique>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

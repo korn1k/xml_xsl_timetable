@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<student xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    xsi:noNamespaceSchemaLocation='timetable.xsd'>
+    <name>Mykyta Koryliuk</name>
+    <!-- An invalid student ID number: 0.93 -->
+    <id-number>0.93</id-number>
+    <!-- A missing REQUIRED element: program-of-study -->
+    <name-of-school>Fanshawe College, West-London Campus</name-of-school>
+    <school-term>W2020</school-term>
+    <!-- An element that is no defined in the schema: extra-classes -->
+    <extra-class>Math</extra-class>
+    <timetable>
+        <day name="Monday">
+            <classes>
+                <class course-code='INFO-1080-02' room-number='H2001'>
+                    <!-- An invalid start time for an Hour field that isn't a multiple of 100: 80-->
+                    <time start='80' end='90' />
+                </class>
+            </classes>
+        </day>
+        <!-- Duplicate day fields: 2 Monday -->
+        <day name="Monday"></day>
+        <day name="Tuesdaasasy">
+            <classes>
+                <!-- An invalid course code: 444 -->
+                <class course-code='444' room-number='H1111'>
+                    <time start='1100' end='1300' />
+                </class>
+                <class course-code='INFO-2221-01' room-number='H4434'>
+                    <time start='1300' end='1400' />
+                </class>
+            </classes>
+        </day>
+        <!-- A missing REQUIRED attribute: name -->
+        <day>
+            <classes>
+                <class course-code='INFO-8976-01' room-number='H1023'>
+                    <time start='1000' end='1200' />
+                </class>
+            </classes>
+        </day>
+        <!-- An invalid number of Day fields: Friday -->
+    </timetable>
+</student>

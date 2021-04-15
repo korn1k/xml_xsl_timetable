@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<student xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    xsi:noNamespaceSchemaLocation='timetable.xsd'>
+    <name>Mykyta Koryliuk</name>
+    <id-number>0939330</id-number>
+    <program-of-study>Internet Applications and Web-Development (IWD)</program-of-study>
+    <name-of-school>Fanshawe College, West-London Campus</name-of-school>
+    <school-term>W2020</school-term>
+    <timetable>
+        <day name="Monday">
+            <classes>
+                <class course-code='INFO-1080' room-number='H2001'>
+                    <time start='800' />
+                </class>
+                <class course-code='INFO-7080' room-number='H1001'>
+                    <time start='1200' />
+                </class>
+                <class course-code='INFO-7810' room-number='H0001'>
+                    <time start='1400' />
+                </class>
+            </classes>
+        </day>
+        <day name="Tuesday" />
+        <day name="Wednesday">
+            <classes>
+                <class course-code='INFO-5654' room-number='H2541'>
+                    <time start='1100' />
+                </class>
+                <class course-code='INFO-8888' room-number='H1781'>
+                    <time start='1400' />
+                </class>
+            </classes>
+        </day>
+        <day name="Thursday">
+            <classes>
+                <class course-code='INFO-7555' room-number='H9431'>
+                    <time start='900' />
+                </class>
+            </classes>
+        </day>
+        <day name="Friday" />
+    </timetable>
+</student>
