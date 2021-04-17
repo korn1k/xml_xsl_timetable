@@ -3,7 +3,7 @@ Displaying student schedule located in one of the XML files; then it verifies th
 
 URL to view live example: https://korn1k.github.io/xml_xsl_timetable_2021/index.html
 
-NOTE: examples shows only student1.xml
+NOTE: example shows only student1.xml
 
 INSTALLATION ON YOUR LOCAL PC:
 
