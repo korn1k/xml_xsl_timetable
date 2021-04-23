@@ -1,5 +1,5 @@
 # xml_xsl_timetable_2021
-School Timetable is a web application for displaying student schedules located in one of the XML files by verifying the content of a file in XSD
+[SCHOOL] School Timetable is a web application for displaying student schedules located in one of the XML files by verifying the content of a file in XSD
 
 TECHNOLOGIES: JavaScript, HTML, CSS, XML, XSD
 
