@@ -1,7 +1,9 @@
 # xml_xsl_timetable_2021
 Displaying student schedule located in one of the XML files; then it verifies the content of the file in XSD
 
-URL to view live example: https://korn1k.github.io/xml_xsl_timetable_2021/index.html
+TECHNOLOGIES: JavaScript, HTML, CSS, XML, XSD
+
+URL to view live example: https://korn1k.github.io/xml_xsl_timetable_2021/index.html (WEAK MOBILE VIEW)
 
 NOTE: example shows only student1.xml
 
