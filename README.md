@@ -1,5 +1,5 @@
 # xml_xsl_timetable_2021
-Displaying student schedule located in one of the XML files; then it verifies the content of the file in XSD
+Timetable is a web application for displaying student schedule located in one of the XML files by verifying the content of a file in XSD
 
 TECHNOLOGIES: JavaScript, HTML, CSS, XML, XSD
 
